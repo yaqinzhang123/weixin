@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>weixin3</display-name>
+  <servlet>
+    <servlet-name>weixinServlet</servlet-name>
+    <servlet-class>com.dongyuan.weixin.servlet.WeixinServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>weixinServlet</servlet-name>
+    <url-pattern>/wx.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>daoServlet</servlet-name>
+    <servlet-class>com.dongyuan.weixin.servlet.DaoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>daoServlet</servlet-name>
+    <url-pattern>/da.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>com.dongyuan.weixin.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/us.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>oauthServlet</servlet-name>
+    <servlet-class>com.dongyuan.weixin.servlet.OAuthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>oauthServlet</servlet-name>
+    <url-pattern>/oa.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>allServlet</servlet-name>
+    <servlet-class>com.dongyuan.weixin.servlet.AllServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>allServlet</servlet-name>
+    <url-pattern>/allServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>insertServlet</servlet-name>
+    <servlet-class>com.dongyuan.weixin.servlet.InsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertServlet</servlet-name>
+    <url-pattern>/insertServlet</url-pattern>
+  </servlet-mapping>
+   
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

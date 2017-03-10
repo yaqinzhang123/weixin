@@ -1,0 +1,2 @@
+[INFO ] 2017-03-06 16:25:26,906 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-06 16:25:27,203 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg

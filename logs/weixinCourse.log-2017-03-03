@@ -1,0 +1,13 @@
+[INFO ] 2017-03-03 08:22:41,349 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-03 08:22:41,803 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg
+[INFO ] 2017-03-03 08:22:57,952 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-03 08:22:58,265 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg
+[ERROR] 2017-03-03 14:05:11,983 com.dongyuan.weixin.util.MenuUtil 创建菜单失败 errcode:40016 errmsg:invalid button size hint: [IrLjPa0112vr21]
+[INFO ] 2017-03-03 14:21:14,568 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-03 14:21:14,993 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg
+[INFO ] 2017-03-03 14:21:39,915 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-03 14:21:40,243 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg
+[INFO ] 2017-03-03 14:41:39,937 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-03 14:41:40,218 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg
+[INFO ] 2017-03-03 15:35:29,545 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-03 15:35:29,998 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg

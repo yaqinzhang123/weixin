@@ -1,0 +1,58 @@
+[INFO ] 2017-03-02 09:31:23,526 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHL8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyUUdMaFZqWXBkazAxMDAwMHcwM08AAgTsdbdYAwQAAAAA
+[INFO ] 2017-03-02 09:31:23,917 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQHL8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyUUdMaFZqWXBkazAxMDAwMHcwM08AAgTsdbdYAwQAAAAA.jpg
+[INFO ] 2017-03-02 09:32:02,859 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHE8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycjFyNFVGWXBkazAxMDAwMGcwM2YAAgQTdrdYAwQAAAAA
+[INFO ] 2017-03-02 09:32:03,203 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQHE8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycjFyNFVGWXBkazAxMDAwMGcwM2YAAgQTdrdYAwQAAAAA.jpg
+[INFO ] 2017-03-02 12:36:26,828 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHE8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycjFyNFVGWXBkazAxMDAwMGcwM2YAAgQTdrdYAwQAAAAA
+[INFO ] 2017-03-02 12:36:27,190 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQHE8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycjFyNFVGWXBkazAxMDAwMGcwM2YAAgQTdrdYAwQAAAAA.jpg
+[INFO ] 2017-03-02 13:52:00,151 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHE8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycjFyNFVGWXBkazAxMDAwMGcwM2YAAgQTdrdYAwQAAAAA
+[INFO ] 2017-03-02 13:52:00,568 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQHE8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycjFyNFVGWXBkazAxMDAwMGcwM2YAAgQTdrdYAwQAAAAA.jpg
+[INFO ] 2017-03-02 16:46:57,188 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-02 16:46:57,451 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFF8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycFZjQ1VEWXBkazAxMDAwMHcwM2kAAgT44LNYAwQAAAAA
+[INFO ] 2017-03-02 16:46:57,734 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFh8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyREhyS1VUWXBkazAxMDAwMHcwM1YAAgQC3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:46:57,994 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFF8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyQi1KYVYzWXBkazAxMDAwMGcwM0sAAgSA76xYAwQAAAAA
+[INFO ] 2017-03-02 16:46:58,297 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFQ8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyaUR3ZFZCWXBkazAxMDAwMHcwMzgAAgQD3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:46:58,571 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGi8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyVFhzQlZUWXBkazAxMDAwMDAwM0IAAgQD3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:46:58,845 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFO8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAybE8xblVSWXBkazAxMDAwMHcwM1kAAgQD3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:46:59,086 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHc8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycXJ4dVVfWXBkazAxMDAwMHcwM0cAAgQE3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:46:59,357 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFM8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAydG05QlZlWXBkazAxMDAwMGcwM1QAAgQE3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:46:59,757 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFw8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWHBRNVVvWXBkazAxMDAwME0wM08AAgQE3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:00,006 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQEf8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyMUszNFUxWXBkazAxMDAwMDAwM2YAAgQE3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:00,304 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHP8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyZ2h0T1VSWXBkazAxMDAwME0wM0kAAgR876xYAwQAAAAA
+[INFO ] 2017-03-02 16:47:00,592 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFN8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyNnlfbVZ5WXBkazAxMDAwME0wMzkAAgQF3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:00,867 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQF98TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTUdzQlZRWXBkazAxMDAwME0wM2MAAgQF3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:01,107 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQF28TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyazRoM1Z2WXBkazAxMDAwMGcwMzkAAgQG3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:01,392 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGG8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyRFRFaVZNWXBkazAxMDAwMHcwMzYAAgQG3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:01,655 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFY8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAySmNaOVZYWXBkazAxMDAwMHcwM18AAgQG3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:01,920 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQEe8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAydDdRblZrWXBkazAxMDAwMGcwM2wAAgQG3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:02,176 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQF08TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyVE4xd1VYWXBkazAxMDAwME0wM2MAAgQH3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:02,465 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGS8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyR09rNFZnWXBkazAxMDAwMGcwMzAAAgQH3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:02,762 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQEm8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyRS1nYlZ2WXBkazAxMDAwMHcwM3cAAgQH3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:03,014 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQE08TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyVlUtZ1Z4WXBkazAxMDAwMGcwM3MAAgQH3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:03,287 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFM8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAydGF1YVVGWXBkazAxMDAwMDAwM1gAAgQI3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:03,537 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGN8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyMGxKaFVwWXBkazAxMDAwME0wMy0AAgQI3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:03,787 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyM2ZEY1ZWWXBkazAxMDAwMHcwM20AAgQI3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:04,070 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQF98TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyMVBKY1ZnWXBkazAxMDAwME0wM2UAAgQI3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:04,342 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFX8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeWNWWFZMWXBkazAxMDAwMDAwM2YAAgQJ3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:04,626 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQEh8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyempKa1YzWXBkazAxMDAwMHcwM18AAgQJ3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:04,894 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFW8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTnotUlVVWXBkazAxMDAwMGcwM2sAAgQJ3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:05,150 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFd8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyUFBNVlZUWXBkazAxMDAwMGcwM2cAAgQK3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:05,404 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFb8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTlZmV1VMWXBkazAxMDAwMHcwM0QAAgQK3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:05,673 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGU8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyNFFHX1ZKWXBkazAxMDAwMGcwM1IAAgQK3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:05,926 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQHV8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyNV9fSVYwWXBkazAxMDAwMDAwM1EAAgQK3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:06,173 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGl8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyaEpSbFY5WXBkazAxMDAwMDAwM0MAAgQL3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:06,411 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFJ8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyREdudFVTWXBkazAxMDAwMGcwM1IAAgQL3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:06,675 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQE88TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyLUNpX1Z2WXBkazAxMDAwMGcwM3AAAgQL3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:06,947 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQF78TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWk11d1YxWXBkazAxMDAwMDAwM1IAAgQL3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:07,233 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFb8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAydVFNRVVFWXBkazAxMDAwMHcwM1IAAgQM3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:07,481 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGK8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyZmJMNFVvWXBkazAxMDAwME0wMzMAAgQM3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:07,713 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQE/8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyZWJrN1VIWXBkazAxMDAwMHcwM1oAAgQM3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:07,968 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGq8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyNEJsWVVGWXBkazAxMDAwMDAwM2YAAgQM3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:08,213 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQE78TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeno2alVFWXBkazAxMDAwMGcwM0UAAgQN3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:08,487 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQGu8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyRTdIU1ZMWXBkazAxMDAwME0wM2EAAgQN3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:47:08,756 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFq8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyV2hiV1Y0WXBkazAxMDAwMHcwMzIAAgQN3LdYAwQAAAAA
+[INFO ] 2017-03-02 16:51:29,030 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-02 16:51:29,534 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg
+[INFO ] 2017-03-02 16:52:45,384 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-02 16:52:46,118 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg
+[INFO ] 2017-03-02 16:53:50,994 com.dongyuan.weixin.util.AdvancedUtil 创建永久带参二维码成功 ticket:gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA
+[INFO ] 2017-03-02 16:53:51,472 com.dongyuan.weixin.util.AdvancedUtil 根据ticket换取二维码成功，filePath=C:/Users/Administrator/Desktop/gQFK8jwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTGNzNFUyWXBkazAxMDAwME0wM2MAAgSrgrFYAwQAAAAA.jpg

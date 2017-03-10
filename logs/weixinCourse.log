@@ -1,0 +1,6 @@
+[ERROR] 2017-03-09 16:17:05,986 com.dongyuan.weixin.util.MenuUtil 创建菜单失败 errcode:40055 errmsg:invalid button url domain hint: [lARr5a0425vr20]
+[ERROR] 2017-03-09 16:19:17,090 com.dongyuan.weixin.util.MenuUtil 创建菜单失败 errcode:40055 errmsg:invalid button url domain hint: [wC.n70556vr19]
+[ERROR] 2017-03-09 16:21:10,939 com.dongyuan.weixin.util.MenuUtil 创建菜单失败 errcode:40055 errmsg:invalid button url domain hint: [wxiAqa0670vr20]
+[ERROR] 2017-03-09 16:22:02,648 com.dongyuan.weixin.util.MenuUtil 创建菜单失败 errcode:40054 errmsg:invalid sub button url domain hint: [AvztlA0722vr23]
+[ERROR] 2017-03-09 16:22:12,205 com.dongyuan.weixin.util.MenuUtil 创建菜单失败 errcode:40054 errmsg:invalid sub button url domain hint: [205o2a0731vr18]
+[ERROR] 2017-03-09 16:22:36,514 com.dongyuan.weixin.util.MenuUtil 创建菜单失败 errcode:40054 errmsg:invalid sub button url domain hint: [k1b7ma0756vr23]
