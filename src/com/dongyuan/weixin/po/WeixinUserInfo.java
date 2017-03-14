@@ -3,8 +3,8 @@ package com.dongyuan.weixin.po;
 /**
  * 微信用户的基本信息
  * 
- * @author liufeng
- * @date 2013-11-09
+ * @author qikuo
+ * @date 2017-2-28
  */
 public class WeixinUserInfo {
 	// 用户的标识

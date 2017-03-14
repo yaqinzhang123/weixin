@@ -5,8 +5,8 @@ import java.util.List;
 /**
  * 关注用户列表
  * 
- * @author liufeng
- * @date 2013-11-09
+ * @author qikuo
+ * @date 2017-2-28
  */
 public class WeixinUserList {
 	// 公众账号的总关注用户数

@@ -3,8 +3,8 @@ package com.dongyuan.weixin.message.resp;
 /**
  * 图文model
  * 
- * @author liufeng
- * @date 2013-09-11
+ * @author qikuo
+ * @date 2017-2-28
  */
 public class Article {
 	// 图文消息名称

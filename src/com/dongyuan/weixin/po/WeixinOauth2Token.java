@@ -3,8 +3,8 @@ package com.dongyuan.weixin.po;
 /**
  * 网页授权信息
  * 
- * @author liufeng
- * @date 2013-11-09
+ * @author qikuo
+ * @date 2017-2-28
  */
 public class WeixinOauth2Token {
 	// 网页授权接口调用凭证

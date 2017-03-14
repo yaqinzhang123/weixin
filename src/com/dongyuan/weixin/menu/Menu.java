@@ -3,8 +3,8 @@ package com.dongyuan.weixin.menu;
 /**
  * ²Ëµ¥
  * 
- * @author liufeng
- * @date 2013-10-15
+ * @author qikuo
+ * @date 2017-2-28
  */
 public class Menu {
 	private Button[] button;

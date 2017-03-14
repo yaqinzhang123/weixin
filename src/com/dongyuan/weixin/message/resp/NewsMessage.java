@@ -5,8 +5,8 @@ import java.util.List;
 /**
  * 文本消息
  * 
- * @author liufeng
- * @date 2013-09-11
+ * @author qikuo
+ * @date 2017-2-28
  */
 public class NewsMessage extends RespBaseMessage {
 	// 图文消息个数，限制为10条以内

@@ -3,8 +3,8 @@ package com.dongyuan.weixin.message.req;
 /**
  * 请求消息基类（普通用户 -> 公众帐号）
  * 
- * @author liufeng
- * @date 2013-09-11
+ *@author qikuo
+ * @date 2017-2-28
  */
 public class ReqBaseMessage {
 	// 开发者微信号

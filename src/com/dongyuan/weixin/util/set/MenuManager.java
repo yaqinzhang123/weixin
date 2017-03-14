@@ -61,10 +61,13 @@ public class MenuManager {
 		btn23.setUrl("http://shop13308654.ddkwxd.com/tag/231300");
 		
 		//按钮3
+		//String reurl= "http://zplsyx.iok.la/weixin3/oa.do";
+		//String reurls = CommonUtil.urlEncodeUTF8(reurl);
 		ViewButton btn3 = new ViewButton();
 		btn3.setName("推广加盟");
 		btn3.setType("view");
 		btn3.setUrl("http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp");
+		//btn11.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx179e17d128a005d0&redirect_uri="+reurls+"&response_type=code&scope=snsapi_userinfo&state=123#wechat_redire");
 		///weixin3/WebContent/JSP/tuiguang.jsp
 		ComplexButton mainBtn1 = new ComplexButton();
 		mainBtn1.setName("招聘入口");

@@ -3,8 +3,8 @@ package com.dongyuan.weixin.message.req;
 /**
  * 文本消息
  * 
- * @author liufeng
- * @date 2013-09-11
+ *@author qikuo
+ * @date 2017-2-28
  */
 public class ReqTextMessage extends ReqBaseMessage {
 	// 消息内容

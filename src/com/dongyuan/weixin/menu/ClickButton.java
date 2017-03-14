@@ -3,8 +3,8 @@ package com.dongyuan.weixin.menu;
 /**
  * click类型的按钮
  * 
- * @author liufeng
- * @date 2013-10-14
+ * @author qikuo
+ * @date 2017-2-28
  */
 public class ClickButton extends Button {
 	private String type;
