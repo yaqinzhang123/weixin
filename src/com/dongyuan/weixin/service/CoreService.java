@@ -1,8 +1,5 @@
 package com.dongyuan.weixin.service;
-
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,15 +7,12 @@ import javax.servlet.http.HttpSession;
 
 import com.dongyuan.weixin.message.event.QRCodeEvent;
 import com.dongyuan.weixin.message.req.ReqTextMessage;
-import com.dongyuan.weixin.message.resp.Article;
-import com.dongyuan.weixin.message.resp.NewsMessage;
 import com.dongyuan.weixin.message.resp.RespTextMessage;
 import com.dongyuan.weixin.po.WeixinUserInfo;
 import com.dongyuan.weixin.user.dao.DaoFactory;
 import com.dongyuan.weixin.util.AdvancedUtil;
 import com.dongyuan.weixin.util.CommonUtil;
 import com.dongyuan.weixin.util.MessageUtil;
-import com.mysql.fabric.Response;
 /**
  * 核心服务类
  * 
@@ -75,32 +69,32 @@ public class CoreService {
 				// 订阅
 				if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {
 					
-					textMessage.setContent("感谢您关注秦皇岛信息港人才频道的微信服务窗口\n招聘方请点击 ->> '招聘入口'\n求职方请点击 ->> '求职入口'\n信息港会员请点击 ->>'人工服务' ->>'会员登记'\n查询服务进展请点击 ->> '人工服务' ->>'状态查询'");
+					textMessage.setContent("欢迎关注秦皇岛人才库，为您提供7日内最新招聘及求职信息\n<a href = 'https://jinshuju.net/f/tl21JZ\'>点我进行招聘登记</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231285\'>点我进入简历超市选择优秀人才</a>，我们每天从数以千计的求职者中为您筛选最新、最优质的求职信息，投放到这里，供您选择。\n<a href = 'https://jinshuju.net/f/j3iabB\'>点我进行求职登记</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231300\'>点我进入招聘信息选择优秀企业</a>，我们每天从众多招聘企业中为您筛选最新、最最优质的求职信息，投放到这里，供您选择。\n<a href = 'http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp\'>推广加盟</a>不仅可以帮助您有需要的朋友快速找到优秀人才、满意工作，您还可以赚取收入。回复？可重复查看此重要信息");
 					// 将消息对象转换成xml
 					respXml = MessageUtil.messageToXml(textMessage);
-					Article article = new Article();
-					article.setTitle("推广加盟介绍");
-					article.setDescription("这是介绍1");
-					article.setPicUrl("http://zplsyx.iok.la/weixin3/img/home.jpeg");
-					article.setUrl("http://www.baidu.com");
-					Article article1 = new Article();
-					article1.setTitle("我要推广");
-					article1.setPicUrl("weixin3/img/home.png");
-					String reurl= "http://zplsyx.iok.la/weixin3/oa.do";
-					String reurls = CommonUtil.urlEncodeUTF8(reurl);
-					article1.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx179e17d128a005d0&redirect_uri="+reurls+"&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirec");
-					List<Article> articleList = new ArrayList<Article>();
-					articleList.add(article);
-					articleList.add(article1);
-//					// 创建图文消息
-					NewsMessage newsMessage = new NewsMessage();
-					newsMessage.setToUserName(fromUserName);
-					newsMessage.setFromUserName(toUserName);
-					newsMessage.setCreateTime(new Date().getTime());
-					newsMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_NEWS);
-					newsMessage.setArticleCount(articleList.size());
-					newsMessage.setArticles(articleList);
-					respXml = MessageUtil.messageToXml(newsMessage);
+//					Article article = new Article();
+//					article.setTitle("秦皇岛人才库介绍");
+//					article.setDescription("秦皇岛人才库作为秦皇岛信息港人才频道的微信服务窗口，以您在短时间内招聘到合适的人才、找到满意的工作为宗旨，以为您提供更加优质、便捷、高效的服务为第一要务。您有人，我们提供招聘信息，您有岗位，我们提供求职信息，合作就是这么简单。");
+//					article.setPicUrl("http://zplsyx.iok.la/weixin3/img/home.jpeg");
+//					//article.setUrl("http://www.baidu.com");
+//					Article article1 = new Article();
+//					article1.setTitle("招聘功能");
+//					article1.setPicUrl("weixin3/img/home.png");
+//					String reurl= "http://zplsyx.iok.la/weixin3/oa.do";
+//					String reurls = CommonUtil.urlEncodeUTF8(reurl);
+//					article1.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx179e17d128a005d0&redirect_uri="+reurls+"&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirec");
+//					List<Article> articleList = new ArrayList<Article>();
+//					articleList.add(article);
+//					articleList.add(article1);
+////					// 创建图文消息
+//					NewsMessage newsMessage = new NewsMessage();
+//					newsMessage.setToUserName(fromUserName);
+//					newsMessage.setFromUserName(toUserName);
+//					newsMessage.setCreateTime(new Date().getTime());
+//					newsMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_NEWS);
+//					newsMessage.setArticleCount(articleList.size());
+//					newsMessage.setArticles(articleList);
+//					respXml = MessageUtil.messageToXml(newsMessage);
 					
 					String openid = baseEvent.getFromUserName();
 					HttpSession session = request.getSession();
@@ -112,7 +106,48 @@ public class CoreService {
 					System.out.println(eventKey.substring(eventKey.length()-1));
 					//获取用户openid等相关信息写入数据库
 					QRCodeEvent qrCodeEvent = DaoFactory.getPersonDaoInstance().insertByopenid(baseEvent);
-					
+//					QRCodeEvent qrCodeEvent = DaoFactory.getPersonDaoInstance().selectByopenid(baseEvent);
+					String APPID = CommonUtil.APPID;
+					String APPSECRET = CommonUtil.APPSECRET;
+					String accessToken = CommonUtil.getToken("APPID", "APPSECRET").getAccessToken();
+					WeixinUserInfo user = AdvancedUtil.getUserInfo(accessToken, openid);
+					//获取用户openid放入数据库进行判断，如果存在不执行操作，如果不存在，则将用户信息写入数据库
+					if (openid != null) {
+						//根据用户openid查询其他数据
+						//查询openid
+						System.out.println("openid:"+user.getOpenId());
+						//查询昵称
+						System.out.println("nickname:"+user.getNickname());
+						//查询性别
+						System.out.println("sex:"+user.getSex());
+						//查询语言
+						System.out.println("language:"+user.getLanguage());
+						//查询城市
+						System.out.println("city:"+user.getCity());
+						//查询省市
+						System.out.println("province:"+user.getProvince());
+						//查询国家
+						System.out.println("country:"+user.getCountry());
+						//查询头像
+						System.out.println("headimgurl:"+user.getHeadImgUrl());
+						//System.out.println(DaoFactory.getPersonDaoInstance().selectByopenid(qrCodeEvent));
+						//DaoFactory.getPersonDaoInstance().selectByopenid(fromUserName);
+//						if (DaoFactory.getPersonDaoInstance().selectByopenid(openid)) {
+//							//不执行操作
+//							System.out.println("不执行操作");
+//						}
+//						else {
+//							System.out.println("插入用户成功");
+//							qrCodeEvent = DaoFactory.getPersonDaoInstance().insertByopenid(baseEvent);
+//						}
+//						if (openid.equals(DaoFactory.getPersonDaoInstance().selectByopenid(openid))) {
+//							//暂不做处理
+//						}else{  
+//						qrCodeEvent = DaoFactory.getPersonDaoInstance().insertByopenid(baseEvent);
+//						}
+//						qrCodeEvent = DaoFactory.getPersonDaoInstance().selectByopenid(openid);
+						//System.out.println(DaoFactory.getPersonDaoInstance().selectByopenid(fromUserName));
+					}
 				}
 				// 取消订阅
 				else if (eventType.equals(MessageUtil.EVENT_TYPE_UNSUBSCRIBE)) {
@@ -134,10 +169,15 @@ public class CoreService {
 			}
 			// 当用户发消息时
 			else{
-				System.out.println("获得的信息:"+textMessage2.getContent());
-				if ("你好".equals(textMessage2.getContent())||"您好".equals(textMessage2.getContent())||"在么".equals(textMessage2.getContent())) {
-					textMessage.setContent("请稍等，正在为您分配客服人员。。。");
-					respXml = MessageUtil.messageToXml(textMessage);	
+//				System.out.println("获得的信息:"+textMessage2.getContent());
+//				if ("你好".equals(textMessage2.getContent())||"您好".equals(textMessage2.getContent())||"在么".equals(textMessage2.getContent())) {
+//					textMessage.setContent("请稍等，正在为您分配客服人员。。。");
+//					respXml = MessageUtil.messageToXml(textMessage);	
+//				}
+				if (textMessage.getContent().equals("?")) {
+					textMessage.setContent("欢迎关注秦皇岛人才库，为您提供7日内最新招聘及求职信息\n<a href = 'https://jinshuju.net/f/tl21JZ\'>点我进行招聘登记</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231285\'>点我进入简历超市选择优秀人才</a>，我们每天从数以千计的求职者中为您筛选最新、最优质的求职信息，投放到这里，供您选择。\n<a href = 'https://jinshuju.net/f/j3iabB\'>点我进行求职登记</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231300\'>点我进入招聘信息选择优秀企业</a>，我们每天从众多招聘企业中为您筛选最新、最最优质的求职信息，投放到这里，供您选择。\n<a href = 'http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp\'>推广加盟</a>不仅可以帮助您有需要的朋友快速找到优秀人才、满意工作，您还可以赚取收入。回复？可重复查看此重要信息");
+					// 将消息对象转换成xml
+					respXml = MessageUtil.messageToXml(textMessage);
 				}
 			}
 		} catch (Exception e) {
