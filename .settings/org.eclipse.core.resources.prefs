@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
+encoding//WebContent/JSP/index.jsp=UTF-8
 encoding//WebContent/JSP/user.jsp=UTF-8
+encoding//src/com/dongyuan/weixin/service/CoreService.java=UTF-8

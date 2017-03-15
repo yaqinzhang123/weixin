@@ -1,0 +1,124 @@
+/*reset*/
+body, h3, ul {
+	margin: 0;
+	padding: 0;
+}
+li {list-style: none;}
+/*end reset*/
+body{
+	/*宽度自适应，内容居中显示*/
+	width: 100%;
+	text-align: center;
+	}
+/*head*/
+.header {
+	/*宽度自适应*/
+	width: 100%;
+	background: #f8f8f8;
+	}
+.header h3 {
+	font-size: 29px;
+	line-height: 69px;
+	color: #777777;
+	}
+/* end head*/
+
+/*search*/
+.search {
+	/*相对定位，宽度自适应*/
+	position: relative;
+	width: 100%;
+	background: #ebeced;
+	border: 1px solid #e0e0e0;
+}
+.search input {
+	/*圆角半径为5px,
+	 宽度自适应
+	 搜索图标作为背景距离左边40%，垂直居中
+	 内容居中显示
+	 */
+	margin: 14px 0;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	width: 90%;
+	background: #ffffff url(../img/searchIcon.png) no-repeat 40% center;
+	text-align: center;
+	font-size: 29px;
+	line-height: 60px;
+	color: #bbbbbb;
+}
+.search input.active {
+	/*宽度自适应*/
+	width: 70%;
+	margin-left: -10%;
+	text-align: left;
+	padding-left: 10%;
+	background: #fff url(../img/searchIcon.png) no-repeat 5% center;
+}
+.search span.cancel {
+	/*
+	绝对定位，不触发时不显示
+	*/
+	position: absolute;
+	top: 30px;
+	right: 5%;
+	display: none;
+	color: #00a5e0;
+	font-size: 28px;
+}
+/* end search*/
+
+/* content*/
+.content {
+	/*
+	overflow:hidden;触发BFC，计算宽高时包括浮动元素
+	*/
+	overflow: hidden;
+	width: 100%;
+	padding-top: 28px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e0e0e0;
+	background: #ffffff;
+}
+.content h3 {
+	/*添加浮动，使h3和span同行显示*/
+	float: left;
+	padding-left: 10%;
+	background: url(../img/down.png) no-repeat 10% center;
+	font-size: 29px;
+	color: #777777;
+}
+.content span.num {
+	/*向右浮动*/
+	float: right;
+	padding-right: 9%;
+	font-size: 17px;
+	font-weight: bold;
+	color: #777777;
+}
+.content ul {
+	/*宽度自适应，清除h3和span浮动的影响*/
+	margin-top: 57px;
+	width: 100%;
+	clear: both;
+	text-align: left;
+}
+.content li {
+	background: url(../img/fIcon.png) no-repeat 3% center;
+	height: 59px;
+	padding-left: 12%;
+	padding-right: 10%;
+}
+.content .friends {
+	color: #000;
+	font-size: 29px;
+	line-height: 59px;
+}
+.content .focus {
+	float: right;
+	color: #008000;
+	font-size: 23px;
+	line-height: 53px;
+	
+}
+/* end content*/

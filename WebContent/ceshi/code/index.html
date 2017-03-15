@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title>index</title>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+</head> 
+<body>
+	<div id="container">
+        <div id="header">
+        	<img src="../img/head.png"/>
+            <h4>秦皇岛人才库</h4>
+        </div>
+       <div id="content">
+            <a class="job" href="#">招聘岗位</a>
+            <div id="person">
+                <img  src="../img/userIcon.png" /><br/>
+                <span class="name">郑爱玲</span><br/>
+                <span class="address">浙江 丽水</span>
+            </div>
+            <div id='share' class="boxer">
+                <a href="#" class="share">分享获取佣金</a>
+            </div>
+            <ul id="mine">
+                <li>
+                    <span>0</span><br/>
+                    <a href="recommend.html">我的推荐</a>
+                </li>
+                <li>
+                    <span>0</span><br/>
+                    <a href="total.html">总推荐数</a>
+                </li>
+                <li>
+                    <span>0</span><br/>
+                    <a href="#">我的奖金</a>
+                </li>
+            </ul>
+        </div>
+       <span class="line"></span>
+        <div id="footer">
+            <h5>我的推荐码</h5>
+            <div>
+                <img src="../img/code.png"/>
+            </div>
+            <div class="boxer">
+            	<a href="#">客服电话</a>
+            </div>
+        </div>
+    </div>
+   <div class="contact">
+    </div>
+    <ul class="contact">
+         <li>呼叫</li>
+         <li>添加到手机通讯录</li>
+     </ul>
+    <script>
+		var footer=document.getElementById("footer");
+		var conlist=document.getElementsByClassName('contact');
+		//获得客服电话
+		var contact=footer.getElementsByTagName('a')[0];
+		//给contact添加点击事件
+		contact.onclick=function(){
+			//设置遮罩层和弹窗的display:block
+			for(var i=0;i<conlist.length;i++){
+				conlist[i].style.display='block';
+				}
+			};
+	</script>
+</body>
+</html>

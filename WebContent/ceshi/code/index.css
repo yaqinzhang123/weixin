@@ -1,0 +1,200 @@
+/*reset*/
+body, h4, h5, ul {
+	margin: 0px;
+	padding: 0px;
+	}
+li {list-style: none;}
+a {text-decoration: none;}
+/* end reset*/
+#container {
+	/*宽度自适应，在不同屏幕下能够铺满*/
+	width: 100%;
+	background: #fff;
+	}
+#header {
+	/*宽度自适应，高度由内容撑开，内容居中*/
+	width: 100%;
+	background: #71c5e4;
+	text-align: center;
+	}
+#header h4 {
+	/*
+	为了让标题和图片同行显示，设置渲染方式为inline
+	设置垂直对齐方式vertical-align为middle
+	行高为80px
+	*/
+	display: inline;
+	font-size: 30px;
+	line-height: 80px;
+	color: #fff;
+	vertical-align:middle;
+	}
+#header img {
+	/*图片和标题垂直居中对齐*/
+	vertical-align:middle;
+	}
+/*content*/
+#content {
+	/*div#person内容居中显示 */
+	position: relative;
+	text-align: center;
+	}
+#content a.job {
+	/*绝对定位，相对于div#content进行偏移
+	  将图标设置为背景，调整padding-left	到合适的数值
+	*/
+	position: absolute;
+	/*top: 29px;
+	right: 26px;*/
+	top:5%;
+	right:5%;
+	background: url(../img/job.png) no-repeat;
+	padding-left: 26px;
+	font-size: 30px;
+	color: #ff8444;
+	}
+/* content person*/
+#person img {
+	/*设置头像的上外边距为30px*/
+	margin-top: 30px;
+	}
+span.name {
+	font-size: 31px;
+	line-height: 80px;
+	}
+span.address {
+	/*将地址图标设置为背景，并将padding-left调整到合适的数值*/
+	padding-left: 28px;
+	background: url(../img/markIcon.png) no-repeat;
+	font-family: Arial;
+	font-size: 24px;
+	line-height: 33px;
+	}
+/* end content person*/
+
+/* content share*/
+div.boxer {
+	/*使div.boxer即分享和客服电话所在的div居中显示
+		并设置圆角半径为5px，div中的内容居中显示
+	*/
+	position: relative;
+	left: 50%;
+	border: 2px dashed #8dc63f;
+	border-radius: 5px;
+	text-align: center;
+	
+	}
+div#share {
+	/*margin-left为宽度的一半的负数使div#share水平居中显示*/
+	margin-left: -145px;
+	margin-top: 28px;
+	margin-bottom: 45px;
+	width: 290px;
+	}
+ a.share {
+	/*将分享图标设置为背景，并将padding-left调整到合适的数值*/
+	padding-left:35px;
+	background: url(../img/shareIcon.png) no-repeat;
+	font-size: 30px;
+	font-weight:bold;
+	line-height:56px;
+	color: #ff8444;
+	}
+/*end content share*/
+
+/* content mine*/
+ul#mine {
+	/*使ul#mine居中显示*/
+	position: relative;
+	left:50%;
+	margin-left:-329px;
+	width: 658px;
+	height: 86px;
+	border-bottom: 1px solid #e0e0e0;
+	}
+#mine li {
+	/*li添加浮动，使li能够同行显示*/
+	float: left;
+	margin: 0 54px;
+	}
+#mine span {
+	font-size: 40px;
+	color: #999999;
+	}
+#mine a {
+	font-size: 24px;
+	color: #999999;
+	}
+/* end content mine*/
+span.line {
+	/*页面中间的分割线*/
+	display: block;
+	margin-top: 32px;
+	height: 18px;
+	background: #f8f8f8;
+	}
+/*end content*/	
+
+/*footer*/	
+#footer {
+	/*div#footer中的内容居中显示*/
+	text-align: center;
+	}
+#footer h5 {
+	font-size: 30px;
+	color: #ff4222;
+	margin: 26px 0 35px 0;
+	}
+#footer a {
+	font-size: 31px;
+	line-height:47px;
+	color: #97cb51;
+	}
+#footer div.boxer {
+	/*为让div.boxer水平居中显示，margin-left为宽度一半的负数*/
+	margin-left: -90px;
+	margin-top: 21px;
+	width: 176px;
+	}
+/* end footer*/
+
+/*contact遮罩层*/
+div.contact, ul.contact {
+	/*display:none;正常情况下，遮罩层不显示*/
+	display: none;
+	}
+div.contact {
+	/*div.contact绝对定位，并相对于html文档偏移，宽高铺满整个屏幕
+	透明度为0.6,达到遮罩的效果
+	*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.6;
+	
+	}	
+ul.contact {
+	/*
+	ul.contact绝对定位，并相对于html文档偏移
+	为使其垂直居中显示，top为50%，margin-top为高度一半的负数
+	高度固定，宽度自适应
+	*/
+	position: absolute;
+	top: 50%;
+	margin-top: -110px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 220px;
+	background: #fff;
+	}
+.contact li {
+	height: 28px;
+	font-size: 28px;
+	color: #4a4a4a;
+	padding: 42px 0 40px 36px;
+	border-bottom: 1px solid #ccc;
+	}

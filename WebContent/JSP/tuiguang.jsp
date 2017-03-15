@@ -21,6 +21,6 @@
 	<P>&nbsp;&nbsp;&nbsp;3、通过您的一级好友分享的链接或二维码注册为会员，在秦皇岛人才库产生的消费X元，您将获得X*6%的收入。</P><br>
 	<P>&nbsp;&nbsp;&nbsp;4、通过您的二级好友分享的链接或二维码注册为会员，在秦皇岛人才库产生的消费X元，您将获得X*4%的收入。</P><br>
 	<P>四、本细则最终解释权归秦皇岛人才库所有。</P><br>
-	<%-- <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx179e17d128a005d0&redirect_uri=<%=reurls %>&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirec">点击我进行推广</a> --%>
+	<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx179e17d128a005d0&redirect_uri=<%=reurls %>&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirec">点击我进行推广</a>
 </body>
 </html>

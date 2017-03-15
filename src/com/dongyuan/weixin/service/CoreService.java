@@ -14,39 +14,39 @@ import com.dongyuan.weixin.util.AdvancedUtil;
 import com.dongyuan.weixin.util.CommonUtil;
 import com.dongyuan.weixin.util.MessageUtil;
 /**
- * ºËĞÄ·şÎñÀà
+ * æ ¸å¿ƒæœåŠ¡ç±»
  * 
  * @author qikuo
  * @date 2017-2-28
  */
 public class CoreService {
 	/**
-	 * ´¦ÀíÎ¢ĞÅ·¢À´µÄÇëÇó
+	 * å¤„ç†å¾®ä¿¡å‘æ¥çš„è¯·æ±‚
 	 * 
 	 * @param request
 	 * @return xml
 	 * 
-	 * ´ÓÊı¾İ¿âÖĞ²éÑ¯ÊÇ·ñÓĞ»ñÈ¡µ½¹Ø×¢ÓÃ»§openid£¬Ã»ÓĞµÄ»°·ÅÈëÊı¾İ¿âÖĞ£¬ÓĞÔò²»½øĞĞÈÎºÎ²Ù×÷
+	 * ä»æ•°æ®åº“ä¸­æŸ¥è¯¢æ˜¯å¦æœ‰è·å–åˆ°å…³æ³¨ç”¨æˆ·openidï¼Œæ²¡æœ‰çš„è¯æ”¾å…¥æ•°æ®åº“ä¸­ï¼Œæœ‰åˆ™ä¸è¿›è¡Œä»»ä½•æ“ä½œ
 	 */
 	public static String processRequest(HttpServletRequest request) {
-		// xml¸ñÊ½µÄÏûÏ¢Êı¾İ
+		// xmlæ ¼å¼çš„æ¶ˆæ¯æ•°æ®
 		String respXml = null;
 		try {
-			// µ÷ÓÃparseXml·½·¨½âÎöÇëÇóÏûÏ¢
+			// è°ƒç”¨parseXmlæ–¹æ³•è§£æè¯·æ±‚æ¶ˆæ¯
 			Map<String, String> requestMap = MessageUtil.parseXml(request);
-			// ·¢ËÍ·½ÕÊºÅ
+			// å‘é€æ–¹å¸å·
 			String fromUserName = requestMap.get("FromUserName");
-			// ¿ª·¢ÕßÎ¢ĞÅºÅ
+			// å¼€å‘è€…å¾®ä¿¡å·
 			String toUserName = requestMap.get("ToUserName");
-			// ÏûÏ¢ÀàĞÍ
+			// æ¶ˆæ¯ç±»å‹
 			String msgType = requestMap.get("MsgType");
-			//½ÓÊÕÏûÏ¢ÄÚÈİ
+			//æ¥æ”¶æ¶ˆæ¯å†…å®¹
 			String content = requestMap.get("Content");
-			//½ÓÊÕkeyÖµ
+			//æ¥æ”¶keyå€¼
 			String eventKey = requestMap.get("EventKey");
-			//ÊÂ¼şÀàĞÍ
+			//äº‹ä»¶ç±»å‹
 			String event = requestMap.get("Event");
-			//É¨ÃèÊÂ¼ş
+			//æ‰«æäº‹ä»¶
 			String scan = requestMap.get("scan");
 			QRCodeEvent baseEvent = new QRCodeEvent();
 			RespTextMessage textMessage = new RespTextMessage();
@@ -62,23 +62,23 @@ public class CoreService {
 			textMessage2.setContent(content);
 			textMessage.setCreateTime(new Date().getTime());
 			textMessage.setMsgType(MessageUtil.REQ_MESSAGE_TYPE_TEXT);
-			// ÊÂ¼şÍÆËÍ
+			// äº‹ä»¶æ¨é€
 			if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_EVENT)) {
-				// ÊÂ¼şÀàĞÍ
+				// äº‹ä»¶ç±»å‹
 				String eventType = requestMap.get("Event");
-				// ¶©ÔÄ
+				// è®¢é˜…
 				if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {
 					
-					textMessage.setContent("»¶Ó­¹Ø×¢ÇØ»ÊµºÈË²Å¿â£¬ÎªÄúÌá¹©7ÈÕÄÚ×îĞÂÕĞÆ¸¼°ÇóÖ°ĞÅÏ¢\n<a href = 'https://jinshuju.net/f/tl21JZ\'>µãÎÒ½øĞĞÕĞÆ¸µÇ¼Ç</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231285\'>µãÎÒ½øÈë¼òÀú³¬ÊĞÑ¡ÔñÓÅĞãÈË²Å</a>£¬ÎÒÃÇÃ¿Ìì´ÓÊıÒÔÇ§¼ÆµÄÇóÖ°ÕßÖĞÎªÄúÉ¸Ñ¡×îĞÂ¡¢×îÓÅÖÊµÄÇóÖ°ĞÅÏ¢£¬Í¶·Åµ½ÕâÀï£¬¹©ÄúÑ¡Ôñ¡£\n<a href = 'https://jinshuju.net/f/j3iabB\'>µãÎÒ½øĞĞÇóÖ°µÇ¼Ç</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231300\'>µãÎÒ½øÈëÕĞÆ¸ĞÅÏ¢Ñ¡ÔñÓÅĞãÆóÒµ</a>£¬ÎÒÃÇÃ¿Ìì´ÓÖÚ¶àÕĞÆ¸ÆóÒµÖĞÎªÄúÉ¸Ñ¡×îĞÂ¡¢×î×îÓÅÖÊµÄÇóÖ°ĞÅÏ¢£¬Í¶·Åµ½ÕâÀï£¬¹©ÄúÑ¡Ôñ¡£\n<a href = 'http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp\'>ÍÆ¹ã¼ÓÃË</a>²»½ö¿ÉÒÔ°ïÖúÄúÓĞĞèÒªµÄÅóÓÑ¿ìËÙÕÒµ½ÓÅĞãÈË²Å¡¢ÂúÒâ¹¤×÷£¬Äú»¹¿ÉÒÔ×¬È¡ÊÕÈë¡£»Ø¸´£¿¿ÉÖØ¸´²é¿´´ËÖØÒªĞÅÏ¢");
-					// ½«ÏûÏ¢¶ÔÏó×ª»»³Éxml
+					textMessage.setContent("ğŸ‰æ¬¢è¿å…³æ³¨ç§¦çš‡å²›äººæ‰åº“ï¼Œä¸ºæ‚¨æä¾›7æ—¥å†…æœ€æ–°æ‹›è˜åŠæ±‚èŒä¿¡æ¯ğŸ‰\nğŸ‘‰<a href = 'https://jinshuju.net/f/tl21JZ\'>ç‚¹æˆ‘è¿›è¡Œæ‹›è˜ç™»è®°</a>\nğŸ‘‰<a href = 'http://shop13308654.ddkwxd.com/tag/231285\'>ç‚¹æˆ‘è¿›å…¥ç®€å†è¶…å¸‚é€‰æ‹©ä¼˜ç§€äººæ‰</a>ï¼Œæˆ‘ä»¬æ¯å¤©ä»æ•°ä»¥åƒè®¡çš„æ±‚èŒè€…ä¸­ä¸ºæ‚¨ç­›é€‰æœ€æ–°ã€æœ€ä¼˜è´¨çš„æ±‚èŒä¿¡æ¯ï¼ŒæŠ•æ”¾åˆ°è¿™é‡Œï¼Œä¾›æ‚¨é€‰æ‹©ã€‚\nğŸ‘‰<a href = 'https://jinshuju.net/f/j3iabB\'>ç‚¹æˆ‘è¿›è¡Œæ±‚èŒç™»è®°</a>\nğŸ‘‰<a href = 'http://shop13308654.ddkwxd.com/tag/231300\'>ç‚¹æˆ‘è¿›å…¥æ‹›è˜ä¿¡æ¯é€‰æ‹©ä¼˜ç§€ä¼ä¸š</a>ï¼Œæˆ‘ä»¬æ¯å¤©ä»ä¼—å¤šæ‹›è˜ä¼ä¸šä¸­ä¸ºæ‚¨ç­›é€‰æœ€æ–°ã€æœ€æœ€ä¼˜è´¨çš„æ±‚èŒä¿¡æ¯ï¼ŒæŠ•æ”¾åˆ°è¿™é‡Œï¼Œä¾›æ‚¨é€‰æ‹©ã€‚\nğŸ‘‰<a href = 'http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp\'>æ¨å¹¿åŠ ç›Ÿ</a>ä¸ä»…å¯ä»¥å¸®åŠ©æ‚¨æœ‰éœ€è¦çš„æœ‹å‹å¿«é€Ÿæ‰¾åˆ°ä¼˜ç§€äººæ‰ã€æ»¡æ„å·¥ä½œï¼Œæ‚¨è¿˜å¯ä»¥èµšå–æ”¶å…¥ã€‚å›å¤ï¼Ÿå¯é‡å¤æŸ¥çœ‹æ­¤é‡è¦ä¿¡æ¯");
+					// å°†æ¶ˆæ¯å¯¹è±¡è½¬æ¢æˆxml
 					respXml = MessageUtil.messageToXml(textMessage);
 //					Article article = new Article();
-//					article.setTitle("ÇØ»ÊµºÈË²Å¿â½éÉÜ");
-//					article.setDescription("ÇØ»ÊµºÈË²Å¿â×÷ÎªÇØ»ÊµºĞÅÏ¢¸ÛÈË²ÅÆµµÀµÄÎ¢ĞÅ·şÎñ´°¿Ú£¬ÒÔÄúÔÚ¶ÌÊ±¼äÄÚÕĞÆ¸µ½ºÏÊÊµÄÈË²Å¡¢ÕÒµ½ÂúÒâµÄ¹¤×÷Îª×ÚÖ¼£¬ÒÔÎªÄúÌá¹©¸ü¼ÓÓÅÖÊ¡¢±ã½İ¡¢¸ßĞ§µÄ·şÎñÎªµÚÒ»ÒªÎñ¡£ÄúÓĞÈË£¬ÎÒÃÇÌá¹©ÕĞÆ¸ĞÅÏ¢£¬ÄúÓĞ¸ÚÎ»£¬ÎÒÃÇÌá¹©ÇóÖ°ĞÅÏ¢£¬ºÏ×÷¾ÍÊÇÕâÃ´¼òµ¥¡£");
+//					article.setTitle("ç§¦çš‡å²›äººæ‰åº“ä»‹ç»");
+//					article.setDescription("ç§¦çš‡å²›äººæ‰åº“ä½œä¸ºç§¦çš‡å²›ä¿¡æ¯æ¸¯äººæ‰é¢‘é“çš„å¾®ä¿¡æœåŠ¡çª—å£ï¼Œä»¥æ‚¨åœ¨çŸ­æ—¶é—´å†…æ‹›è˜åˆ°åˆé€‚çš„äººæ‰ã€æ‰¾åˆ°æ»¡æ„çš„å·¥ä½œä¸ºå®—æ—¨ï¼Œä»¥ä¸ºæ‚¨æä¾›æ›´åŠ ä¼˜è´¨ã€ä¾¿æ·ã€é«˜æ•ˆçš„æœåŠ¡ä¸ºç¬¬ä¸€è¦åŠ¡ã€‚æ‚¨æœ‰äººï¼Œæˆ‘ä»¬æä¾›æ‹›è˜ä¿¡æ¯ï¼Œæ‚¨æœ‰å²—ä½ï¼Œæˆ‘ä»¬æä¾›æ±‚èŒä¿¡æ¯ï¼Œåˆä½œå°±æ˜¯è¿™ä¹ˆç®€å•ã€‚");
 //					article.setPicUrl("http://zplsyx.iok.la/weixin3/img/home.jpeg");
 //					//article.setUrl("http://www.baidu.com");
 //					Article article1 = new Article();
-//					article1.setTitle("ÕĞÆ¸¹¦ÄÜ");
+//					article1.setTitle("æ‹›è˜åŠŸèƒ½");
 //					article1.setPicUrl("weixin3/img/home.png");
 //					String reurl= "http://zplsyx.iok.la/weixin3/oa.do";
 //					String reurls = CommonUtil.urlEncodeUTF8(reurl);
@@ -86,7 +86,7 @@ public class CoreService {
 //					List<Article> articleList = new ArrayList<Article>();
 //					articleList.add(article);
 //					articleList.add(article1);
-////					// ´´½¨Í¼ÎÄÏûÏ¢
+////					// åˆ›å»ºå›¾æ–‡æ¶ˆæ¯
 //					NewsMessage newsMessage = new NewsMessage();
 //					newsMessage.setToUserName(fromUserName);
 //					newsMessage.setFromUserName(toUserName);
@@ -104,44 +104,44 @@ public class CoreService {
 					System.out.println(openid);
 					//System.out.println("eventKey"+eventKey);
 					System.out.println(eventKey.substring(eventKey.length()-1));
-					//»ñÈ¡ÓÃ»§openidµÈÏà¹ØĞÅÏ¢Ğ´ÈëÊı¾İ¿â
+					//è·å–ç”¨æˆ·openidç­‰ç›¸å…³ä¿¡æ¯å†™å…¥æ•°æ®åº“
 					QRCodeEvent qrCodeEvent = DaoFactory.getPersonDaoInstance().insertByopenid(baseEvent);
 //					QRCodeEvent qrCodeEvent = DaoFactory.getPersonDaoInstance().selectByopenid(baseEvent);
 					String APPID = CommonUtil.APPID;
 					String APPSECRET = CommonUtil.APPSECRET;
 					String accessToken = CommonUtil.getToken("APPID", "APPSECRET").getAccessToken();
 					WeixinUserInfo user = AdvancedUtil.getUserInfo(accessToken, openid);
-					//»ñÈ¡ÓÃ»§openid·ÅÈëÊı¾İ¿â½øĞĞÅĞ¶Ï£¬Èç¹û´æÔÚ²»Ö´ĞĞ²Ù×÷£¬Èç¹û²»´æÔÚ£¬Ôò½«ÓÃ»§ĞÅÏ¢Ğ´ÈëÊı¾İ¿â
+					//è·å–ç”¨æˆ·openidæ”¾å…¥æ•°æ®åº“è¿›è¡Œåˆ¤æ–­ï¼Œå¦‚æœå­˜åœ¨ä¸æ‰§è¡Œæ“ä½œï¼Œå¦‚æœä¸å­˜åœ¨ï¼Œåˆ™å°†ç”¨æˆ·ä¿¡æ¯å†™å…¥æ•°æ®åº“
 					if (openid != null) {
-						//¸ù¾İÓÃ»§openid²éÑ¯ÆäËûÊı¾İ
-						//²éÑ¯openid
+						//æ ¹æ®ç”¨æˆ·openidæŸ¥è¯¢å…¶ä»–æ•°æ®
+						//æŸ¥è¯¢openid
 						System.out.println("openid:"+user.getOpenId());
-						//²éÑ¯êÇ³Æ
+						//æŸ¥è¯¢æ˜µç§°
 						System.out.println("nickname:"+user.getNickname());
-						//²éÑ¯ĞÔ±ğ
+						//æŸ¥è¯¢æ€§åˆ«
 						System.out.println("sex:"+user.getSex());
-						//²éÑ¯ÓïÑÔ
+						//æŸ¥è¯¢è¯­è¨€
 						System.out.println("language:"+user.getLanguage());
-						//²éÑ¯³ÇÊĞ
+						//æŸ¥è¯¢åŸå¸‚
 						System.out.println("city:"+user.getCity());
-						//²éÑ¯Ê¡ÊĞ
+						//æŸ¥è¯¢çœå¸‚
 						System.out.println("province:"+user.getProvince());
-						//²éÑ¯¹ú¼Ò
+						//æŸ¥è¯¢å›½å®¶
 						System.out.println("country:"+user.getCountry());
-						//²éÑ¯Í·Ïñ
+						//æŸ¥è¯¢å¤´åƒ
 						System.out.println("headimgurl:"+user.getHeadImgUrl());
 						//System.out.println(DaoFactory.getPersonDaoInstance().selectByopenid(qrCodeEvent));
 						//DaoFactory.getPersonDaoInstance().selectByopenid(fromUserName);
 //						if (DaoFactory.getPersonDaoInstance().selectByopenid(openid)) {
-//							//²»Ö´ĞĞ²Ù×÷
-//							System.out.println("²»Ö´ĞĞ²Ù×÷");
+//							//ä¸æ‰§è¡Œæ“ä½œ
+//							System.out.println("ä¸æ‰§è¡Œæ“ä½œ");
 //						}
 //						else {
-//							System.out.println("²åÈëÓÃ»§³É¹¦");
+//							System.out.println("æ’å…¥ç”¨æˆ·æˆåŠŸ");
 //							qrCodeEvent = DaoFactory.getPersonDaoInstance().insertByopenid(baseEvent);
 //						}
 //						if (openid.equals(DaoFactory.getPersonDaoInstance().selectByopenid(openid))) {
-//							//Ôİ²»×ö´¦Àí
+//							//æš‚ä¸åšå¤„ç†
 //						}else{  
 //						qrCodeEvent = DaoFactory.getPersonDaoInstance().insertByopenid(baseEvent);
 //						}
@@ -149,15 +149,15 @@ public class CoreService {
 						//System.out.println(DaoFactory.getPersonDaoInstance().selectByopenid(fromUserName));
 					}
 				}
-				// È¡Ïû¶©ÔÄ
+				// å–æ¶ˆè®¢é˜…
 				else if (eventType.equals(MessageUtil.EVENT_TYPE_UNSUBSCRIBE)) {
-					// TODO Ôİ²»×ö´¦Àí
+					// TODO æš‚ä¸åšå¤„ç†
 				}
-				// ×Ô¶¨Òå²Ëµ¥µã»÷ÊÂ¼ş
+				// è‡ªå®šä¹‰èœå•ç‚¹å‡»äº‹ä»¶
 				else if (eventType.equals(MessageUtil.EVENT_TYPE_CLICK)) {
-					// ÊÂ¼şKEYÖµ£¬Óë´´½¨²Ëµ¥Ê±µÄkeyÖµ¶ÔÓ¦
+					// äº‹ä»¶KEYå€¼ï¼Œä¸åˆ›å»ºèœå•æ—¶çš„keyå€¼å¯¹åº”
 					//String eventKey = requestMap.get("EventKey");
-					// ¸ù¾İkeyÖµÅĞ¶ÏÓÃ»§µã»÷µÄ°´Å¥
+					// æ ¹æ®keyå€¼åˆ¤æ–­ç”¨æˆ·ç‚¹å‡»çš„æŒ‰é’®
 					if(eventKey.equals("btn3")){
 						
 					}
@@ -167,16 +167,16 @@ public class CoreService {
 				MessageUtil.EVENT_TYPE_SCAN.equals(scan);
 				System.out.println("key"+eventKey);
 			}
-			// µ±ÓÃ»§·¢ÏûÏ¢Ê±
+			// å½“ç”¨æˆ·å‘æ¶ˆæ¯æ—¶
 			else{
-//				System.out.println("»ñµÃµÄĞÅÏ¢:"+textMessage2.getContent());
-//				if ("ÄãºÃ".equals(textMessage2.getContent())||"ÄúºÃ".equals(textMessage2.getContent())||"ÔÚÃ´".equals(textMessage2.getContent())) {
-//					textMessage.setContent("ÇëÉÔµÈ£¬ÕıÔÚÎªÄú·ÖÅä¿Í·şÈËÔ±¡£¡£¡£");
+//				System.out.println("è·å¾—çš„ä¿¡æ¯:"+textMessage2.getContent());
+//				if ("ä½ å¥½".equals(textMessage2.getContent())||"æ‚¨å¥½".equals(textMessage2.getContent())||"åœ¨ä¹ˆ".equals(textMessage2.getContent())) {
+//					textMessage.setContent("è¯·ç¨ç­‰ï¼Œæ­£åœ¨ä¸ºæ‚¨åˆ†é…å®¢æœäººå‘˜ã€‚ã€‚ã€‚");
 //					respXml = MessageUtil.messageToXml(textMessage);	
 //				}
 				if (textMessage.getContent().equals("?")) {
-					textMessage.setContent("»¶Ó­¹Ø×¢ÇØ»ÊµºÈË²Å¿â£¬ÎªÄúÌá¹©7ÈÕÄÚ×îĞÂÕĞÆ¸¼°ÇóÖ°ĞÅÏ¢\n<a href = 'https://jinshuju.net/f/tl21JZ\'>µãÎÒ½øĞĞÕĞÆ¸µÇ¼Ç</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231285\'>µãÎÒ½øÈë¼òÀú³¬ÊĞÑ¡ÔñÓÅĞãÈË²Å</a>£¬ÎÒÃÇÃ¿Ìì´ÓÊıÒÔÇ§¼ÆµÄÇóÖ°ÕßÖĞÎªÄúÉ¸Ñ¡×îĞÂ¡¢×îÓÅÖÊµÄÇóÖ°ĞÅÏ¢£¬Í¶·Åµ½ÕâÀï£¬¹©ÄúÑ¡Ôñ¡£\n<a href = 'https://jinshuju.net/f/j3iabB\'>µãÎÒ½øĞĞÇóÖ°µÇ¼Ç</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231300\'>µãÎÒ½øÈëÕĞÆ¸ĞÅÏ¢Ñ¡ÔñÓÅĞãÆóÒµ</a>£¬ÎÒÃÇÃ¿Ìì´ÓÖÚ¶àÕĞÆ¸ÆóÒµÖĞÎªÄúÉ¸Ñ¡×îĞÂ¡¢×î×îÓÅÖÊµÄÇóÖ°ĞÅÏ¢£¬Í¶·Åµ½ÕâÀï£¬¹©ÄúÑ¡Ôñ¡£\n<a href = 'http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp\'>ÍÆ¹ã¼ÓÃË</a>²»½ö¿ÉÒÔ°ïÖúÄúÓĞĞèÒªµÄÅóÓÑ¿ìËÙÕÒµ½ÓÅĞãÈË²Å¡¢ÂúÒâ¹¤×÷£¬Äú»¹¿ÉÒÔ×¬È¡ÊÕÈë¡£»Ø¸´£¿¿ÉÖØ¸´²é¿´´ËÖØÒªĞÅÏ¢");
-					// ½«ÏûÏ¢¶ÔÏó×ª»»³Éxml
+					textMessage.setContent("æ¬¢è¿å…³æ³¨ç§¦çš‡å²›äººæ‰åº“ï¼Œä¸ºæ‚¨æä¾›7æ—¥å†…æœ€æ–°æ‹›è˜åŠæ±‚èŒä¿¡æ¯\n<a href = 'https://jinshuju.net/f/tl21JZ\'>ç‚¹æˆ‘è¿›è¡Œæ‹›è˜ç™»è®°</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231285\'>ç‚¹æˆ‘è¿›å…¥ç®€å†è¶…å¸‚é€‰æ‹©ä¼˜ç§€äººæ‰</a>ï¼Œæˆ‘ä»¬æ¯å¤©ä»æ•°ä»¥åƒè®¡çš„æ±‚èŒè€…ä¸­ä¸ºæ‚¨ç­›é€‰æœ€æ–°ã€æœ€ä¼˜è´¨çš„æ±‚èŒä¿¡æ¯ï¼ŒæŠ•æ”¾åˆ°è¿™é‡Œï¼Œä¾›æ‚¨é€‰æ‹©ã€‚\n<a href = 'https://jinshuju.net/f/j3iabB\'>ç‚¹æˆ‘è¿›è¡Œæ±‚èŒç™»è®°</a>\n<a href = 'http://shop13308654.ddkwxd.com/tag/231300\'>ç‚¹æˆ‘è¿›å…¥æ‹›è˜ä¿¡æ¯é€‰æ‹©ä¼˜ç§€ä¼ä¸š</a>ï¼Œæˆ‘ä»¬æ¯å¤©ä»ä¼—å¤šæ‹›è˜ä¼ä¸šä¸­ä¸ºæ‚¨ç­›é€‰æœ€æ–°ã€æœ€æœ€ä¼˜è´¨çš„æ±‚èŒä¿¡æ¯ï¼ŒæŠ•æ”¾åˆ°è¿™é‡Œï¼Œä¾›æ‚¨é€‰æ‹©ã€‚\n<a href = 'http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp\'>æ¨å¹¿åŠ ç›Ÿ</a>ä¸ä»…å¯ä»¥å¸®åŠ©æ‚¨æœ‰éœ€è¦çš„æœ‹å‹å¿«é€Ÿæ‰¾åˆ°ä¼˜ç§€äººæ‰ã€æ»¡æ„å·¥ä½œï¼Œæ‚¨è¿˜å¯ä»¥èµšå–æ”¶å…¥ã€‚å›å¤ï¼Ÿå¯é‡å¤æŸ¥çœ‹æ­¤é‡è¦ä¿¡æ¯");
+					// å°†æ¶ˆæ¯å¯¹è±¡è½¬æ¢æˆxml
 					respXml = MessageUtil.messageToXml(textMessage);
 				}
 			}
