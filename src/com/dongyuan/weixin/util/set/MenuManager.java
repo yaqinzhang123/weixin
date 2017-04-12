@@ -5,7 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.dongyuan.weixin.menu.Button;
-import com.dongyuan.weixin.menu.ClickButton;
 import com.dongyuan.weixin.menu.ComplexButton;
 import com.dongyuan.weixin.menu.Menu;
 import com.dongyuan.weixin.menu.ViewButton;
@@ -14,7 +13,7 @@ import com.dongyuan.weixin.util.CommonUtil;
 import com.dongyuan.weixin.util.MenuUtil;
 
 /**
- * ²Ëµ¥¹ÜÀíÆ÷Àà
+ * èœå•ç®¡ç†å™¨ç±»
  * 
  * @author qikuo
  * @date 2017-2-28
@@ -23,58 +22,59 @@ public class MenuManager {
 	private static Logger log = LoggerFactory.getLogger(MenuManager.class);
 
 	/**
-	 * ¶¨Òå²Ëµ¥½á¹¹
+	 * å®šä¹‰èœå•ç»“æ„
 	 * 
 	 * @return
 	 */
+	//äººæ‰åº“
 	private static Menu getMenu() {
-		//°´Å¥1
+		//æŒ‰é’®1
 		ViewButton btn11 = new ViewButton();
-		btn11.setName("ÕĞÆ¸µÇ¼Ç");
+		btn11.setName("æ‹›è˜ç™»è®°");
 		btn11.setType("view");
 		btn11.setUrl("https://jinshuju.net/f/tl21JZ");
 	
 		ViewButton btn12 = new ViewButton();
-		btn12.setName("´úÁÔÈË²Å");
+		btn12.setName("ä»£çŒäººæ‰");
 		btn12.setType("view");
 		btn12.setUrl("https://jinshuju.net/f/OAOrtf");
 		
 		ViewButton btn13 = new ViewButton();
-		btn13.setName("¼òÀú³¬ÊĞ");
+		btn13.setName("ç®€å†è¶…å¸‚");
 		btn13.setType("view");
 		btn13.setUrl("http://shop13308654.ddkwxd.com/tag/231285");
 		
-		//°´Å¥2
+		//æŒ‰é’®2
 		ViewButton btn21 = new ViewButton();
-		btn21.setName("ÇóÖ°µÇ¼Ç");
+		btn21.setName("æ±‚èŒç™»è®°");
 		btn21.setType("view");
 		btn21.setUrl("https://jinshuju.net/f/j3iabB");
 		
 		ViewButton btn22 = new ViewButton();
-		btn22.setName("´ú²é¸ÚÎ»");
+		btn22.setName("ä»£æŸ¥å²—ä½");
 		btn22.setType("view");
 		btn22.setUrl("https://jinshuju.net/f/d4unTY");
 		
 		ViewButton btn23 = new ViewButton();
-		btn23.setName("ÕĞÆ¸ĞÅÏ¢");
+		btn23.setName("æ‹›è˜ä¿¡æ¯");
 		btn23.setType("view");
 		btn23.setUrl("http://shop13308654.ddkwxd.com/tag/231300");
 		
-		//°´Å¥3
+		//æŒ‰é’®3
 		String reurl= "http://zplsyx.iok.la/weixin3/oa.do";
 		String reurls = CommonUtil.urlEncodeUTF8(reurl);
 		ViewButton btn3 = new ViewButton();
-		btn3.setName("ÍÆ¹ã¼ÓÃË");
+		btn3.setName("æ¨å¹¿åŠ ç›Ÿ");
 		btn3.setType("view");
 //		btn3.setUrl("http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp");
 		btn3.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx179e17d128a005d0&redirect_uri="+reurls+"&response_type=code&scope=snsapi_userinfo&state=123#wechat_redire");
 		///weixin3/WebContent/JSP/tuiguang.jsp
 		ComplexButton mainBtn1 = new ComplexButton();
-		mainBtn1.setName("ÕĞÆ¸Èë¿Ú");
+		mainBtn1.setName("æ‹›è˜å…¥å£");
 		mainBtn1.setSub_button(new Button[] { btn11, btn12, btn13 });
 
 		ComplexButton mainBtn2 = new ComplexButton();
-		mainBtn2.setName("ÇóÖ°Èë¿Ú");
+		mainBtn2.setName("æ±‚èŒå…¥å£");
 		mainBtn2.setSub_button(new Button[] { btn21, btn22, btn23 });
 
 		Menu menu = new Menu();
@@ -82,28 +82,68 @@ public class MenuManager {
 		
 		return menu;
 	}
-
+	//ä¼ç®¡æ²™é¾™
+	private static Menu getMenu_qgsl() {
+		//æŒ‰é’®1
+		ViewButton btn1 = new ViewButton();
+		btn1.setName("æ´»åŠ¨");
+		btn1.setType("view");
+		btn1.setUrl("https://jinshuju.net/f/m8KFIy");
+		//æŒ‰é’®2
+		ViewButton btn2 = new ViewButton();
+		btn2.setName("å’¨è¯¢");
+		btn2.setType("view");
+		btn2.setUrl("https://jinshuju.net/f/6rO9Gt");
+		
+		//æŒ‰é’®3
+		String reurl= "http://zplsyx.iok.la/weixin3/oa.do";
+		String reurls = CommonUtil.urlEncodeUTF8(reurl);
+		ViewButton btn3 = new ViewButton();
+		btn3.setName("æ¨å¹¿åŠ ç›Ÿ");
+		btn3.setType("view");
+//		btn3.setUrl("http://zplsyx.iok.la/weixin3/JSP/tuiguang.jsp");
+		btn3.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx179e17d128a005d0&redirect_uri="+reurls+"&response_type=code&scope=snsapi_userinfo&state=123#wechat_redire");
+		///weixin3/WebContent/JSP/tuiguang.jsp
+		
+		Menu menu = new Menu();
+		menu.setButton(new Button[] { btn1,btn2,btn3 });
+		
+		return menu;
+	}
 	public static void main(String[] args) {
-		// µÚÈı·½ÓÃ»§Î¨Ò»Æ¾Ö¤
+		// ç¬¬ä¸‰æ–¹ç”¨æˆ·å”¯ä¸€å‡­è¯
 		String appId = CommonUtil.APPID;
-		// µÚÈı·½ÓÃ»§Î¨Ò»Æ¾Ö¤ÃÜÔ¿
+		// ç¬¬ä¸‰æ–¹ç”¨æˆ·å”¯ä¸€å‡­è¯å¯†é’¥
 		String appSecret = CommonUtil.APPSECRET;
-
-		// µ÷ÓÃ½Ó¿Ú»ñÈ¡Æ¾Ö¤
+		// ç¬¬ä¸‰æ–¹ç”¨æˆ·å”¯ä¸€å‡­è¯
+		String appId_qgsl = CommonUtil.APPID_qgsl;
+		// ç¬¬ä¸‰æ–¹ç”¨æˆ·å”¯ä¸€å‡­è¯å¯†é’¥
+		String appSecret_qgsl = CommonUtil.APPSECRET_qgsl;
+		
+		// è°ƒç”¨æ¥å£è·å–å‡­è¯
 		Token token = CommonUtil.getToken(appId, appSecret);
-
+		Token token_qgsl = CommonUtil.getToken_qgsl(appId_qgsl, appSecret_qgsl);
 		if (null != token) {
-			// ´´½¨²Ëµ¥
+			// åˆ›å»ºèœå•
 			boolean result = MenuUtil.createMenu(getMenu(), token.getAccessToken());
-
-			// ÅĞ¶Ï²Ëµ¥´´½¨½á¹û
+			// åˆ¤æ–­èœå•åˆ›å»ºç»“æœ
 			if (result)
-				//log.info("²Ëµ¥´´½¨³É¹¦£¡");
-				System.out.println("²Ëµ¥´´½¨³É¹¦");
+				//log.info("èœå•åˆ›å»ºæˆåŠŸï¼");
+				System.out.println("èœå•åˆ›å»ºæˆåŠŸ1");
 			else
-				//log.info("²Ëµ¥´´½¨Ê§°Ü£¡");
-				System.out.println("´´½¨Ê§°Ü");
-			
+				//log.info("èœå•åˆ›å»ºå¤±è´¥ï¼");
+				System.out.println("åˆ›å»ºå¤±è´¥1");
+		}
+		if (null != token_qgsl) {
+			// åˆ›å»ºèœå•
+			boolean result_qgsl = MenuUtil.createMenu(getMenu_qgsl(), token.getAccessToken());
+			// åˆ¤æ–­èœå•åˆ›å»ºç»“æœ
+			if (result_qgsl)
+				//log.info("èœå•åˆ›å»ºæˆåŠŸï¼");
+				System.out.println("èœå•åˆ›å»ºæˆåŠŸ2");
+			else
+				//log.info("èœå•åˆ›å»ºå¤±è´¥ï¼");
+				System.out.println("åˆ›å»ºå¤±è´¥2");	
 		}
 	}
 }
