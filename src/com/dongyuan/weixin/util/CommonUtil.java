@@ -31,8 +31,8 @@ public class CommonUtil {
 	private static Logger log = LoggerFactory.getLogger(CommonUtil.class);
 	public static final String APPID = "wx179e17d128a005d0";
 	public static final String APPSECRET ="64001733208cf2e39a1a1c9d6c14d52a";
-	public static final String APPID_qgsl = "wx179e17d128a005d0";
-	public static final String APPSECRET_qgsl ="64001733208cf2e39a1a1c9d6c14d52a";
+	public static final String APPID_qgsl = "wxd72af67620853d7f";
+	public static final String APPSECRET_qgsl ="ef8337372b363be11276ff0a9a107390";
 	// ƾ֤��ȡ��GET��
 	public final static String token_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET";
 	/**
